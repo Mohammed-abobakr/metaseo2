@@ -680,7 +680,7 @@ ul.bullets li.active {
 .quote {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url(/images/3.jpg);
+    background-image: url(../images/3.jpg);
     background-size: cover;
     color: #fff;
 }
