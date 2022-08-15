@@ -127,16 +127,16 @@ header {
             background: #0079d2;
             color: #fff !important;
             border-radius: 5px;
-        }        
+        }
+        .logo img {
+            width: 150px;
+        }
 }
 
 @media (min-width:768px) {
     header .form {
         position: absolute;
         right: 12px;
-    }
-    .header ul {
-        margin-right: 40px !important;
     }
 }
 header .container {
