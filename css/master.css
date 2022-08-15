@@ -570,8 +570,8 @@ text-decoration: none;
 @media (max-width: 767px) {
     .stats-box {
         flex-basis: 100%;
-        border-bottom: 1px solid #fff;
     }
+
 }
 @media (min-width: 768px) {
     .stats-box {
@@ -897,9 +897,9 @@ display: block;
         caret-color: #0079d2;
         border-radius: 5px;
 }
-.supscribe .form input[type="submit"] {
+/* .supscribe .form input[type="submit"] {
 
-}
+} */
 /* E_supscribe */
 /* contact us  */
 .contact-us {
