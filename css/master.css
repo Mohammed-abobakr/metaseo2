@@ -102,6 +102,43 @@ header {
         width: 100%;
         z-index: 3;
 }
+@media (max-width: 767px) {
+    header {
+        background-color: #fff;
+    }
+
+    header .form {
+        margin-left: 0 !important;
+        border-left: 0 !important;
+        padding: 15px !important;
+        background: #0079d2;
+        color: #fff !important;
+        border-radius: 5px;
+    }
+        a.logo {
+            flex: 1;
+            justify-content: center;
+            display: flex;}
+        header nav {
+            flex : 0 !important;
+                }
+        header .menu {
+            padding: 15px;
+            background: #0079d2;
+            color: #fff !important;
+            border-radius: 5px;
+        }        
+}
+
+@media (min-width:768px) {
+    header .form {
+        position: absolute;
+        right: 12px;
+    }
+    .header ul {
+        margin-right: 40px !important;
+    }
+}
 header .container {
     display: flex;
     justify-content: space-between;
@@ -131,6 +168,7 @@ header nav {
 header ul {
     display: flex;
     justify-content: flex-end;
+    margin-right: 40px;
 }
 @media (max-width:767px) {
     header ul {
@@ -709,3 +747,153 @@ q {
     margin-right: 10px;
 }
 /* End Quote  */
+/* start Pricing  */
+.pricing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pricing .container {
+    display: block;
+}
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.plan {
+        background: #eee;
+        color: #0079d2;
+        text-align: center;
+}
+.pricing .plans .plan .head {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #0079d2;
+    border-top: 1px solid #0079d2;
+}
+.pricing .plans .plan h3{
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.pricing .head span{
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+}
+.head span:before{
+    content: "$";
+    font-size: 25px;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    font-weight: normal;
+}
+.head span:after{
+        content: '/USD';
+        font-size: 25px;
+        position: absolute;
+        bottom: 0;
+        right: -60px;
+        font-weight: normal;
+}
+.pricing .plans .plan ul{
+    border-bottom: 1px solid #0079d2;
+}
+.pricing .plans .plan ul li {
+    padding: 20px;
+    position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+        content: "";
+        height: 1px;
+        background: #0079d2;
+        position: absolute;
+        width: 150px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+}
+.pricing .plans .plan ul li::before {
+    content: '\f044';
+    font-family: 'Font Awesome 6 Free';
+    margin-right: 20px;
+}
+.foot a {
+text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid;
+    width: fit-content;
+    margin: 30px auto;
+}
+.contact-text {
+    text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        margin: 30px auto;
+}
+.contact-link {
+    text-decoration: none;
+        background: #0079d2;
+        padding: 20px 50px;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        margin: auto;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+}
+
+/* End Pricing  */
+/* S_supscribe */
+.supscribe {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/12.jpg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    
+}
+.supscribe::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 /50%);
+    top: 0;
+}
+.supscribe .container {
+position: relative;
+text-align: center;
+display: block;
+}
+.supscribe .form {
+    display: block;
+    position: relative;
+}
+@media (max-width:992px ) {
+    .supscribe .form {
+        flex-direction: column;
+    }
+}
+.supscribe .form i {
+
+}
+.supscribe .form  {
+
+}
+.supscribe .form input[type="mail"] {
+    padding: 10px 20px 10px 60px;
+        width: 50%;
+        border: 1px solid #fff;
+        background: transparent;
+        caret-color: #0079d2;
+        border-radius: 5px;
+}
+.supscribe .form input[type="submit"] {
+
+}
+/* E_supscribe */
